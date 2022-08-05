@@ -23,6 +23,7 @@ public class WikiTest {
      $("[name = q]").setValue("selenide").pressEnter();
      $$("ul.repo-list li").first().$("a").click();
      $("#wiki-tab").click();
+     $(byText("Show 2 more pages…")).click();
      $(byText("Soft assertions")).click();
      $("#js-repo-pjax-container").shouldHave(text("""
              Using JUnit5 extend test class:
